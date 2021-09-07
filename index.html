@@ -12,15 +12,19 @@
     <h1 class="titulo">Calculadora IMC</h1>
     
     <div class="container">
-        <form class="form" name="calcIMC" action="#">
+        <form class="form" name="calcIMC">
             <p class="pForm">Insira sua altura</p>
-            <input class="altura inputForm" name="altura" type="text">
+            <input class="altura inputForm" name="altura" type="text" placeholder="Ex: 1.80">
         
             <p class="pForm">Insira seu peso</p>
-            <input class="peso inputForm" name="peso" type="text">
+            <input class="peso inputForm" name="peso" type="text" placeholder="Ex: 70.0">
 
-            <input class="btnForm" type="submit" value="Calcular" onclick="calcular()">
+            <input class="btnForm" type="button" value="Calcular" onclick="calcular()">
+            <input class="btnForm" type="button" value="Limpar" onclick="limpar()">
         </form>
+
+        <p class="resultado"></p>
+
     </div>
 
     <script src="script.js"></script>

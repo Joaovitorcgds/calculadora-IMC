@@ -1,22 +1,36 @@
-function calcular(){
-    const altura = document.querySelector(".altura").value;
-    const peso = document.querySelector(".peso").value;
-    
+//pegando os elementos
+    let altura = document.querySelector(".altura");
+    let peso = document.querySelector(".peso");
+    let resultado = document.querySelector(".resultado");
 
-    let calc = parseInt(peso / (altura * altura));
-    
+
+function calcular(){ 
+    // calculo do imc
+    let calc = parseFloat((peso.value / (altura.value * altura.value)).toFixed(2));
+
+    // condições 
     if(calc < 18.5){
-        alert("Magreza, seu IMC é de:" + calc);
+        resultado.innerHTML = "Magreza, seu IMC é de:" + calc;
     }
     else if(calc >= 18.5 && calc < 25){
-        alert("Normal, seu IMC é de:" + calc);
+        resultado.innerHTML = "Normal, seu IMC é de:"  + calc;
     }
     else if(calc >= 25 && calc < 30){
-        alert("Sobrepeso, seu IMC é de:" + calc);
+        resultado.innerHTML = "Sobrepeso, seu IMC é de:" + calc;
     }
     else if(calc >=30 && calc < 40){
-    alert('Obesidade, seu IMC é de: ' + calc);
+        resultado.innerHTML = "Obesidade, seu IMC é de:" + calc;
     }
-    else 
-        alert('Obesidade Grave')
+    else
+        resultado.innerHTML = "Obesidade Grave, seu IMC é de:" + calc;
+}
+
+function limpar(){
+    let altura1 = document.querySelector(".altura").value;
+    let peso1 = document.querySelector(".peso").value;
+
+    
+    altura1.innerText = "";
+    peso1.innerText = "";
+    resultado.innerHTML = "";
 }

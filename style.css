@@ -47,3 +47,8 @@ margin: 25px;
     align-self: center;
     border-radius: 5px;
 }
+
+.resultado{
+    margin: 30px 10% 0px 10%;
+    font-size: 30px;
+}
