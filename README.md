@@ -7,3 +7,6 @@
   <li>Agora é só apertar em calcular e você terá o seu IMC.</li>
 </ul>
 
+<img width="350px" height="450px" src="forReadme/Animação.gif">
+
+
