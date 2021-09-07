@@ -10,27 +10,23 @@ function calcular(){
 
     // condições 
     if(calc < 18.5){
-        resultado.innerHTML = "Magreza, seu IMC é de:" + calc;
+        resultado.innerHTML = "Magreza, seu IMC é de: " + calc;
     }
     else if(calc >= 18.5 && calc < 25){
-        resultado.innerHTML = "Normal, seu IMC é de:"  + calc;
+        resultado.innerHTML = "Normal, seu IMC é de: "  + calc;
     }
     else if(calc >= 25 && calc < 30){
-        resultado.innerHTML = "Sobrepeso, seu IMC é de:" + calc;
+        resultado.innerHTML = "Sobrepeso, seu IMC é de: " + calc;
     }
     else if(calc >=30 && calc < 40){
-        resultado.innerHTML = "Obesidade, seu IMC é de:" + calc;
+        resultado.innerHTML = "Obesidade, seu IMC é de: " + calc;
     }
     else
-        resultado.innerHTML = "Obesidade Grave, seu IMC é de:" + calc;
+        resultado.innerHTML = "Obesidade Grave, seu IMC é de: " + calc;
 }
 
 function limpar(){
-    let altura1 = document.querySelector(".altura").value;
-    let peso1 = document.querySelector(".peso").value;
-
-    
-    altura1.innerText = "";
-    peso1.innerText = "";
+    document.querySelector(".altura").value = "";
+    document.querySelector(".peso").value = "";
     resultado.innerHTML = "";
 }

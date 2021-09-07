@@ -40,6 +40,11 @@ margin: 25px;
     align-self: center;
 }
 
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
 .btnForm{
     width: 200px;    
     margin-top: 30px;
